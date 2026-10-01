@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dave Catinguel | Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="tailwind.js"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lucide Icons -->
+    <script src="unpkg.js"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="#home" class="text-2xl font-bold">
+                Dave<span class="text-blue-500">.</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center gap-8">
+
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <button id="themeBtn"
+                    class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700">
+
+                    <i data-lucide="moon"></i>
+
+                </button>
+
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div id="mobileMenu" class="hidden md:hidden px-6 pb-5">
+
+            <div class="flex flex-col gap-4">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="min-h-screen flex items-center pt-20">
+
+        <div class="max-w-6xl mx-auto px-6 w-full">
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <!-- Hero Text -->
+                <div>
+
+                    <p class="text-blue-500 font-semibold mb-3">
+                        HELLO, I'M
+                    </p>
+
+                    <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+
+                        Dave
+                        <span class="text-blue-500">
+                            Catinguel
+                        </span>
+
+                    </h1>
+
+                    <h2 class="text-2xl md:text-3xl font-semibold mt-5 text-gray-600 dark:text-gray-400">
+
+                        IT Student & Aspiring Developer
+
+                    </h2>
+
+                    <p class="mt-6 text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed">
+
+                        I create modern, user-friendly websites and applications
+                        while continuously learning new technologies in the world
+                        of Information Technology.
+
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 mt-8">
+
+                        <a href="#projects"
+                            class="px-6 py-3 rounded-lg bg-blue-500 text-white font-semibold hover:bg-blue-600 transition">
+
+                            View My Work
+
+                        </a>
+
+                        <a href="#contact"
+                            class="px-6 py-3 rounded-lg border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+
+                            Contact Me
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+               <!-- Profile -->
+
+    <div class="flex justify-center">
+
+        <div class="profile-circle">
+
+        <div class="profile-inner overflow-hidden">
+
+            <img
+                src="images/profile.jpg"
+                alt="Dave Catinguel"
+                class="w-full h-full object-cover"
+            >
+
+        </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="py-24 bg-white dark:bg-gray-900">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="section-heading">
+
+                <p class="text-blue-500 font-semibold">
+                    GET TO KNOW ME
+                </p>
+
+                <h2 class="section-title">
+                    About Me
+                </h2>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <div>
+
+                    <h3 class="text-2xl font-bold mb-4">
+                        Passionate About Technology
+                    </h3>
+
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+
+                        I am an Information Technology student interested in
+                        web development, programming, UI/UX design, and
+                        software development.
+
+                    </p>
+
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed mt-4">
+
+                        My goal is to improve my technical skills by building
+                        practical projects and learning how technology can
+                        solve real-world problems.
+
+                    </p>
+
+                </div>
+
+
+                <div class="grid grid-cols-2 gap-5">
+
+                    <div class="info-card">
+
+                        <i data-lucide="code-2" class="text-blue-500 mb-4"></i>
+
+                        <h4 class="font-bold">
+                            Development
+                        </h4>
+
+                        <p class="text-sm text-gray-500 mt-2">
+                            Building websites and applications.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <i data-lucide="palette" class="text-purple-500 mb-4"></i>
+
+                        <h4 class="font-bold">
+                            UI/UX
+                        </h4>
+
+                        <p class="text-sm text-gray-500 mt-2">
+                            Creating clean interfaces.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <i data-lucide="database" class="text-green-500 mb-4"></i>
+
+                        <h4 class="font-bold">
+                            Database
+                        </h4>
+
+                        <p class="text-sm text-gray-500 mt-2">
+                            Working with structured data.
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <i data-lucide="lightbulb" class="text-yellow-500 mb-4"></i>
+
+                        <h4 class="font-bold">
+                            Problem Solving
+                        </h4>
+
+                        <p class="text-sm text-gray-500 mt-2">
+                            Finding practical solutions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="py-24">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="section-heading">
+
+                <p class="text-blue-500 font-semibold">
+                    WHAT I KNOW
+                </p>
+
+                <h2 class="section-title">
+                    My Skills
+                </h2>
+
+            </div>
+
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+
+                <div class="skill-card">
+                    <i data-lucide="code" class="mx-auto mb-4 text-orange-500"></i>
+                    <h3 class="font-semibold">HTML</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i data-lucide="braces" class="mx-auto mb-4 text-blue-500"></i>
+                    <h3 class="font-semibold">JavaScript</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i data-lucide="paintbrush" class="mx-auto mb-4 text-cyan-500"></i>
+                    <h3 class="font-semibold">Tailwind CSS</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i data-lucide="database" class="mx-auto mb-4 text-green-500"></i>
+                    <h3 class="font-semibold">MySQL</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i data-lucide="coffee" class="mx-auto mb-4 text-red-500"></i>
+                    <h3 class="font-semibold">Java</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i data-lucide="terminal" class="mx-auto mb-4 text-purple-500"></i>
+                    <h3 class="font-semibold">C++</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i data-lucide="figma" class="mx-auto mb-4 text-pink-500"></i>
+                    <h3 class="font-semibold">Figma</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i data-lucide="github" class="mx-auto mb-4"></i>
+                    <h3 class="font-semibold">GitHub</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="py-24 bg-white dark:bg-gray-900">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="section-heading">
+
+                <p class="text-blue-500 font-semibold">
+                    MY WORK
+                </p>
+
+                <h2 class="section-title">
+                    Featured Projects
+                </h2>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+
+                <!-- Project 1 -->
+                <div class="project-card">
+
+                     <div class="project-image overflow-hidden">
+
+                <img
+                    src="images/quickbite.jpg"
+                    alt="QuickBite Project"
+                    class="w-full h-full object-contain"
+                >
+
+            </div>
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <h3 class="text-xl font-bold">
+                            QuickBite
+                        </h3>
+
+                        <p class="text-gray-500 mt-3">
+
+                            A modern food ordering UI prototype designed
+                            for mobile users.
+
+                        </p>
+
+                        <div class="flex gap-2 mt-5 flex-wrap">
+
+                            <span class="tag orange">
+                                Figma
+                            </span>
+
+                            <span class="tag blue">
+                                UI/UX
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 2 -->
+                <div class="project-card">
+
+                    <div class="project-image bg-gradient-to-br from-blue-500 to-purple-600">
+
+                        <i data-lucide="qr-code"
+                           class="w-20 h-20 text-white">
+                        </i>
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <h3 class="text-xl font-bold">
+                            Smart Attendance
+                        </h3>
+
+                        <p class="text-gray-500 mt-3">
+
+                            An attendance concept using dynamic QR codes
+                            and location verification.
+
+                        </p>
+
+                        <div class="flex gap-2 mt-5 flex-wrap">
+
+                            <span class="tag blue">
+                                Research
+                            </span>
+
+                            <span class="tag purple">
+                                Technology
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 3 -->
+                <div class="project-card">
+
+                    <div class="project-image bg-gradient-to-br from-green-400 to-teal-600">
+
+                        <i data-lucide="shopping-cart"
+                           class="w-20 h-20 text-white">
+                        </i>
+
+                    </div>
+
+                    <div class="p-6">
+
+                        <h3 class="text-xl font-bold">
+                            Pet Supply POS
+                        </h3>
+
+                        <p class="text-gray-500 mt-3">
+
+                            A point-of-sale concept for managing products,
+                            orders, payments, and receipts.
+
+                        </p>
+
+                        <div class="flex gap-2 mt-5 flex-wrap">
+
+                            <span class="tag green">
+                                PHP
+                            </span>
+
+                            <span class="tag blue">
+                                MySQL
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="py-24">
+
+        <div class="max-w-3xl mx-auto px-6">
+
+            <div class="section-heading">
+
+                <p class="text-blue-500 font-semibold">
+                    GET IN TOUCH
+                </p>
+
+                <h2 class="section-title">
+                    Contact Me
+                </h2>
+
+                <p class="text-gray-500 mt-4">
+                    Have a project or question? Send me a message.
+                </p>
+
+            </div>
+
+
+            <form id="contactForm" class="space-y-5">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                    class="form-input">
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                    class="form-input">
+
+                <textarea
+                    rows="6"
+                    placeholder="Your Message"
+                    required
+                    class="form-input"></textarea>
+
+                <button
+                    type="submit"
+                    class="w-full py-4 rounded-lg bg-blue-500
+                           text-white font-semibold hover:bg-blue-600 transition">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+
+            <p id="formMessage"
+               class="text-center mt-5 text-green-500 hidden">
+
+                Message submitted successfully!
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="py-8 border-t border-gray-200 dark:border-gray-800">
+
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row
+                    justify-between items-center gap-4">
+
+            <p class="text-gray-500">
+
+                © <span id="year"></span> Dave Catinguel.
+                All rights reserved.
+
+            </p>
+
+
+            <div class="flex gap-5">
+
+                <a href="#" class="hover:text-blue-500">
+                    <i data-lucide="github"></i>
+                </a>
+
+                <a href="#" class="hover:text-blue-500">
+                    <i data-lucide="facebook"></i>
+                </a>
+
+                <a href="#" class="hover:text-blue-500">
+                    <i data-lucide="instagram"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

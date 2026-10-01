@@ -1,0 +1,244 @@
+/* ================= GENERAL ================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.nav-link {
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #3b82f6;
+}
+
+
+/* ================= SECTION HEADINGS ================= */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile-circle {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #9333ea
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.profile-inner {
+    width: 18rem;
+    height: 18rem;
+
+    border-radius: 50%;
+
+    background: #f3f4f6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark .profile-inner {
+    background: #111827;
+}
+
+
+/* ================= INFO CARDS ================= */
+
+.info-card {
+    padding: 1.5rem;
+
+    border-radius: 0.75rem;
+
+    background: #f9fafb;
+
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.dark .info-card {
+    background: #1f2937;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skill-card {
+    padding: 1.5rem;
+
+    border-radius: 0.75rem;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    text-align: center;
+
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.dark .skill-card {
+    background: #111827;
+
+    border-color: #1f2937;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.project-card {
+    overflow: hidden;
+
+    border-radius: 0.75rem;
+
+    background: #f9fafb;
+
+    border: 1px solid #e5e7eb;
+
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.dark .project-card {
+    background: #030712;
+
+    border-color: #1f2937;
+}
+
+.project-image {
+    height: 12rem;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* ================= TAGS ================= */
+
+.tag {
+    padding: 0.25rem 0.75rem;
+
+    border-radius: 9999px;
+
+    font-size: 0.75rem;
+}
+
+.tag.orange {
+    background: #ffedd5;
+    color: #ea580c;
+}
+
+.tag.blue {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.tag.purple {
+    background: #f3e8ff;
+    color: #9333ea;
+}
+
+.tag.green {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+
+/* ================= FORM ================= */
+
+.form-input {
+    width: 100%;
+
+    padding: 1rem 1.25rem;
+
+    border-radius: 0.5rem;
+
+    border: 1px solid #d1d5db;
+
+    background: white;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #3b82f6;
+
+    box-shadow:
+        0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.dark .form-input {
+    background: #111827;
+
+    border-color: #374151;
+
+    color: white;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .profile-circle {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .profile-inner {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+}
